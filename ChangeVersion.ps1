@@ -1,5 +1,17 @@
 # from http://blogs.msdn.com/b/dotnetinterop/archive/2008/04/21/powershell-script-to-batch-update-assemblyinfo-cs-with-new-version.aspx
 
+function Usage
+{
+  echo "Usage: ";
+  echo "  from cmd.exe: ";
+  echo "     powershell.exe SetVersion.ps1  2.8.3.0";
+  echo " ";
+  echo "  from powershell.exe prompt: ";
+  echo "     .\SetVersion.ps1  2.8.3.0";
+  echo " ";
+}
+
+
 function Update-SourceVersion
 {
   Param ([string]$Version)
